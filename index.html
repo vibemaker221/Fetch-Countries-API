@@ -14,28 +14,10 @@
     <p>Please enter the country name to search :</p>
     <input type="text" class="form-control" id="ctry" style="width: 50%;"><br>
     <button type="button" class="btn btn-primary" onclick="fetchcountry()">search</button>
-    </div>
+    </div><br>
 
-    <!-- <div class="container">
-    <div class="card" style="width: 27rem;">
-        <div id="imgs"> 
-
-        </div>
-        <div class="card-body">
-            <div class="card" style="width: 25rem; background-color:rgb(240, 235, 235)">
-            <div class="card-body">
-            <div class="card-text" id="chead">
-           
-            </div>
-            <h4><p class="card-text" id="result">
-            </p></h4>
-            </div>
-        </div>
-        </div>
-      </div>
-    </div> -->
     <div class="container">
-        <div id="countrydetails"></div>
+        <center><div id="countrydetails"></div></center>
     </div>
       
 </body>
@@ -58,7 +40,7 @@
         let subregion=data[0].subregion
         //console.log(counrty_name,capital,population,flags,currency_name,symbol,region,subregion)
         //console.log(flags)
-       htmldata+=`<div class="card" style="width: 25rem;">
+       htmldata+=`<div class="card" style="width: 30rem;">
         <img src="${flags}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"><b>Name :</b>${counrty_name}</h5>
